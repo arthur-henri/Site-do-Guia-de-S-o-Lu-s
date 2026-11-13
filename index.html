@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de São Luís</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Guia de São Luís</h1>
+    <nav>
+      <a href="#pontos-turisticos">Pontos turísticos</a>
+      <a href="#comidas-tipicas">Comidas típicas</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button id="botao-tema">Modo escuro</button>
+  </header>
+
+  <main>   
+    <section id="pontos-turisticos">
+      <h2>Pontos Turísticos</h2>
+      <div class="cards-container">        
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrgIvPUsb8hWhS0mRqmj30Q6wGPlOXa7Jhw5n6ppQwQ&s=10">
+          <h3>Centro Histórico</h3>
+          <p>Famoso pelos seus casarões coloniais revestidos de azulejos portugueses.</p>
+          <button class="btn-curtir">Curtir (<span class="contador">0</span>)</button>
+        </article>
+        <article class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUXNGN-jSurOz1AhJPYAnJW9n0AmnaXEHMXPp1MOp6A&s=10">
+          <h3>Lagoa da Jansen</h3>
+          <p>Parque ecológico ideal para caminhadas, esportes e lazer ao ar livre.</p>
+          <button class="btn-curtir">Curtir (<span class="contador">0</span>)</button>
+        </article>
+        <article class="card">
+          <img src="https://acaciogilborsoi.com.br/wp-content/uploads/2025/04/palacio-dos-leoes-foto5.jpg">
+          <h3>Palácio dos Leões</h3>
+          <p>Sede do governo estadual, com arquitetura neoclássica e vista para a baía.</p>
+          <button class="btn-curtir">Curtir (<span class="contador">0</span>)</button>
+        </article>
+      </div>
+    </section>
+    <section id="comidas-tipicas">
+      <h2>Comidas Típicas</h2>
+      <ul class="lista-comidas">
+        <li>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWREswMvvDuL78w4xEuA4e204EeUEcokuBhplYdmjlQ&s=10">
+          <div>
+            <h3>Arroz de Cuxá</h3>
+            <p>Prato típico maranhense feito com arroz, folhas de vinagreira, camarão seco, gergelim e castanha-de-caju.</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://s2-receitas.glbimg.com/er27xLQ66SQ6pKMB-5cf9cmVTQw=/0x0:800x536/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2012/06/13/17/31/11/844/tortacamarao.jpg">
+          <div>
+            <h3>Torta de Camarão</h3>
+            <p>Uma torta cremosa recheada com camarões frescos, temperos verdes e coberta com uma massa leve.</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://guiadacozinha.com.br/wp-content/uploads/2019/10/peixe-empanado-molho-vinagrete.jpg">
+          <div>
+            <h3>Peixe Frito com Vinagrete</h3>
+            <p>Peixe fresco frito bem crocante, tradicionalmente acompanhado de vinagrete fresco, arroz e macaxeira.</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVl4o7GnCBzzG9WMg96kVvHGrtCs0NtA66S5Cy8utzYuMTrm3zIevY-U6&s=10">
+          <div>
+            <h3>Juçara com Farinha d'Água</h3>
+            <p>O famoso açaí maranhense (juçara), consumido tradicionalmente com farinha d'água e acompanhamentos.</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_642173-MLA95721322493_102025-O-refrigerante-guarana-jesus-kit-06-latas-350ml--sabor-unico-do-maranhao-tradicional-e-refrescante-com-toque-doce-e-aroma-marcante-ideal-para-refeicoes-festas-e-momentos-de-alegria-em-familia-guara.webp">
+          <div>
+            <h3>Guaraná Jesus</h3>
+            <p>O tradicional refrigerante cor-de-rosa do Maranhão, famoso pelo seu sabor adocicado único que lembra cravo e canela.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="cultura">
+      <h2>Cultura Maranhense</h2>
+      <p>O Maranhão possui uma cultura rica e cheia de tradições. O reggae é um dos maiores símbolos do estado, especialmente em São Luís, conhecida como Jamaica Brasileira. O ritmo ganhou características próprias, com destaque para as radiolas e a dança agarradinha. Também se destacam manifestações como o Bumba meu boi, o Tambor de Crioula e o Cacuriá.</p>
+    </section>
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="feedback-form"></p>
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido por: Arthur Henrique - Turma 202</p>
+    <p>Fontes das imagens: Wikimedia Commons, MercadoLivre, Facebook</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
